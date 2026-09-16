@@ -1,0 +1,25 @@
+name: Предложение
+description: Предложить улучшение или направление работы.
+title: "[Предложение] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую задачу решаем
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Предложение и ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Связанные материалы и влияние
+      description: Какие направления затрагивает идея и что нужно проверить.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Другие варианты

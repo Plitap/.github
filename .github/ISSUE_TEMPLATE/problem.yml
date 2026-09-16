@@ -1,0 +1,29 @@
+name: Проблема или неточность
+description: Сообщить о конкретной проблеме в материалах или опубликованной реализации.
+title: "[Проблема] "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Материал или версия
+      description: Ссылка на файл, раздел или версия проверяемого компонента.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Что обнаружено
+      description: Опишите проблему и условия, при которых она возникает.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Дополнительные сведения
+      description: Пример или способ проверки без секретов и личных данных.
